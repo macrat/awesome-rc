@@ -320,8 +320,8 @@ globalkeys = awful.util.table.join(
     -- Menubar
     --awful.key({ modkey }, "p", function() menubar.show() end),
 
-	awful.key({ "Mod1",           }, "1",     function () awful.screen.focus(2) end),
-	awful.key({ "Mod1",           }, "2",     function () awful.screen.focus(1) end)
+	awful.key({ "Mod1",           }, "1",     function () awful.screen.focus(1) end),
+	awful.key({ "Mod1",           }, "2",     function () awful.screen.focus(2) end)
 )
 
 clientkeys = awful.util.table.join(
@@ -343,8 +343,8 @@ clientkeys = awful.util.table.join(
             c.maximized_vertical   = not c.maximized_vertical
         end),
 
-	awful.key({ "Mod1", "Shift"   }, "1",     function (c) awful.client.movetoscreen(c, 2) end),
-	awful.key({ "Mod1", "Shift"   }, "2",     function (c) awful.client.movetoscreen(c, 1) end)
+	awful.key({ "Mod1", "Shift"   }, "1",     function (c) awful.client.movetoscreen(c, 1) end),
+	awful.key({ "Mod1", "Shift"   }, "2",     function (c) awful.client.movetoscreen(c, 2) end)
 )
 
 -- Bind all key numbers to tags.
